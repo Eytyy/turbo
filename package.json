@@ -30,7 +30,8 @@
     "path": "^0.12.7"
   },
   "scripts": {
-    "build": "babel src -d lib"
+    "build": "babel src -d lib",
+    "start": "node server.js"
   },
   "private": true,
   "dependencies": {
