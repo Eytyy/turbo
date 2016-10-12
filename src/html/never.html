@@ -1,0 +1,28 @@
+<!-- work1.html -->
+{% set page_data = global['work']['5'] %}
+{% set page = global['work'] %}
+{% set classes="inner work" %}
+{% set length = 0 %}
+
+{% extends 'layouts/application.html' %}
+
+{% block content %}
+  <main role="main">
+    <section class="c-section c-section--work">
+      <div class="c-slider c-slider--work">
+        {% include 'modules/slider.html' %}
+      </div>
+      <div class="desc">{{page_data['desc'] | safe}}</div>
+      {% if length > 1 %}
+        <div class="c-slider__nav">
+          <div class="c-slider__nav__item c-slider__nav__item--count">(<span class="currentSlide"></span>/<span class="slidesCount"></span>)</div>
+          <div class="c-slider__nav__item c-slider__nav__item--dir c-slider__nav__item--back"><</div>
+          <div class="c-slider__nav__item c-slider__nav__item--dir c-slider__nav__item--dir--next">></div>
+        </div>
+      {% endif %}
+    </section>
+  </main>
+{% endblock %}
+
+{% block javascript %}
+{% endblock %}

@@ -1,0 +1,20 @@
+/* layout/_grid.scss */
+
+@mixin make-row($gutter: $grid_gutter, $breakpoint: 'compact') {
+  @include clearfix;
+  @include respond-to($breakpoint) {
+    margin-left: $gutter * -1;
+    > * {
+      padding-left: $gutter;
+    }
+  }
+}
+
+@mixin make-col($index: '1', $floated: true, $breakpoint: 'compact') {
+  width: percentage(unquote($index)/$grid-columns);
+  @if $floated {
+    @include respond-to($breakpoint) {
+      float: left;
+    }
+  }
+}

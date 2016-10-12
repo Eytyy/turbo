@@ -1,0 +1,30 @@
+/* main.scss */
+
+// #1 Utilities
+@import "utils/vars";
+@import "utils/placeholders";
+@import "utils/mixins";
+
+// #2 Base
+@import "base/reset";
+@import "base/fonts";
+@import "base/base";
+
+// #3 Layout
+@import "layout/grid";
+@import "layout/header";
+@import "layout/footer";
+@import "layout/layout";
+
+// #4 Modules
+@import "modules/sections";
+@import "modules/nav";
+@import "modules/slider";
+@import "modules/modal";
+
+// #5 Pages
+@import "pages/front";
+@import "pages/contact";
+
+// #6 States
+@import "states";

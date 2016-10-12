@@ -1,0 +1,15 @@
+{% for project in page_data['slides'] %}
+  {% set length = loop.length %}
+  <div class="c-slider__slide">
+    {% if project.img %}
+      <a class="c-slider__slide_img-link" href="images/{{project.imgL}}" target="_blank">
+        <img src="images/{{project.img}}" alt="">
+        <!-- <div class="c-slider__slide_img" style="background-image: url('images/{{project.img}}');"></div> -->
+      </a>
+    {% endif %}
+    {% if project.video %}
+      <video class="c-slider__slide_video" src="resources/{{project.video}}" poster="images/{{project.poster}}"></video>
+      <i class="playVid"></i>
+    {% endif %}
+  </div>
+{% endfor %}

@@ -2,3 +2,10 @@
 bower_components
 node_modules
 dest
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
+
+turbo.zip

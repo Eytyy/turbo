@@ -1,0 +1,37 @@
+/* utils/_variables.scss */
+
+// Fonts Variables
+$title: 'Tinos-Bold', serif;
+$body: 'Tinos-Regular', serif;
+
+// Colors Variables
+$yellow: #FFFF00;
+$blue: #0000FF;
+$pink: #FF7BAC;
+
+// Layout Variables
+$gutter: 2em;
+$gutter--large: 4em;
+$gutter--max: 7.5em;
+
+$grid-columns: 12;
+$grid_gutter: 12em;
+
+$compact-wrapper-width: 97.2em;
+$large-wrapper-width: 126em;
+$full-wrapper-width: 133em;
+$max-wrapper-width: 144em;
+
+// Media Queries variables
+
+// horizontal breakpoints
+$breakpoints: (
+  'small'   : '(min-width: 320px)',
+  'compact' : '(min-width: 568px)',
+  'medium'  : '(min-width: 720px)',
+  'fazlakeh': '(min-width: 970px)',
+  'large'   : '(min-width: 1020px)',
+  'xlarge'  : '(min-width: 1400px)',
+  // 'small-landscape': '(min-width: 320px) and (max-height: 400px), (min-width: 500px) and (max-height: 500px)',
+  // 'large-landscape': '(min-width: 1020px) and (max-height: 800px)'
+);

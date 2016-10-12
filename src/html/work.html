@@ -1,0 +1,26 @@
+<!-- work2.html -->
+{% set page_data = global['work-landing'] %}
+{% set page = global['work'] %}
+{% set classes="landing work" %}
+{% set length = 0 %}
+
+
+{% block content %}
+  <main role="main">
+    <section class="c-section">
+      <div class="c-slider c-slider--work c-slider--full">
+        {% for project in page_data %}
+        {%set length = loop.length %}
+          <div class="c-slider__slide">
+            <div class="c-slider__slide_img" style="background-image: url('images/{{project}}');"></div>
+          </div>
+        {% endfor %}
+      </div>
+    </section>
+  </main>
+{% endblock %}
+
+{% extends 'layouts/application.landing.html' %}
+
+{% block javascript %}
+{% endblock %}

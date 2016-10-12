@@ -47,6 +47,10 @@ const paths = {
     src: `${root.src}/data/**/*.json`,
     dest: `${root.dest}/data`,
   },
+  resources: {
+    src: `${root.src}/resources/**/*`,
+    dest: `${root.dest}/resources`,
+  },
 };
 
 // Start of styles related tasks ------------------------------------------
@@ -68,15 +72,22 @@ gulp.task('copyData', 'copy data from src to dest', () => {
     .pipe(reload({ stream: true }));
 });
 
+gulp.task('copyResources', 'copy resorces from src to dest', () => {
+  gulp.src(paths.resources.src)
+    .pipe(gulp.dest(paths.resources.dest));
+});
+
 // Start of HTML related tasks --------------------------------------------
 const dataPath = `${root.src}/data`;
 const templatesPath = `${root.src}/html`;
 
 gulp.task('html', 'copy HTML files and move to dest folder', () => {
   gulp.src(paths.html.src)
-    .pipe(data(() => ({
-      global: require(`${dataPath}/data.json`),
-    })))
+    .pipe(data(function() {
+      return {
+        global: require(`${dataPath}/data.json`),
+      };
+    }))
     .pipe(render({
       path: templatesPath,
     }))
@@ -89,7 +100,7 @@ gulp.task('html', 'copy HTML files and move to dest folder', () => {
 // Start of Images related tasks --------------------------------------------
 gulp.task('images', 'Optimize images and move to dest folder', () => {
   gulp.src(paths.images.src)
-    .pipe(changed(paths.dest)) // ignore unchanged files
+    .pipe(changed(paths.images.dest)) // ignore unchanged files
     .pipe(imagemin()) // optimize
     .pipe(gulp.dest(paths.images.dest))
     .pipe(reload({ stream: true }));
@@ -155,4 +166,4 @@ gulp.task('serve', 'serve resources', () => {
 });
 // End of serve related tasks ---------------------------------------------
 
-gulp.task('default', ['help', 'copyData', 'fonts', 'images', 'html', 'styles', 'babel', 'serve', 'watch']);
+gulp.task('default', ['help', 'copyData', 'copyResources', 'fonts', 'images', 'html', 'styles', 'babel', 'serve', 'watch']);

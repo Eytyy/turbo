@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
+  <title>{% block title %}Turbo{% endblock %}</title>
+  <link rel="stylesheet" href="css/main.css">
+  {% block head %}{% endblock %}
+</head>
+<body class="inner contact">
+  <div class="wrapper wrapper--main">
+    <div class="sidebar">
+      {% include "partials/header.front.html" %}
+    </div>
+    {% block content %}{% endblock %}
+  </div>
+  <!-- bower:js -->
+  <script src="js/vendor/jquery.min.js"></script>
+  <!-- endbower -->
+  <!-- <script src="js/utils.js"></script> -->
+  <script src="js/main.js"></script>
+  {% block javascript %}{% endblock %}
+</body>
+</html>

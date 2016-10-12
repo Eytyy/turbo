@@ -1,2 +1,204 @@
 {
+  "work-landing": [
+    "work/turbo.png"
+  ],
+  "space-landing": [
+    "space/space1.jpg",
+    "space/space2.jpg"
+  ],
+  "work": {
+    "1" : {
+      "title": "Daboos",
+      "link": "daboos.html",
+      "desc": "Translating to Needle in English, Turbo was approached to come up with the visual identity for Daboos; an embroidery art start-up and creative studio. The concept draws inspiration from old comic books.<br />The illustration for the logo was developed with esteemed illustrator Hassan Manasrah.<br />Daboos and Turbo are currently collaborating to produce a series of limited edition embroidered patches and a clothing line",
+      "slides": [
+        {
+          "img": "work/daboos/Daboos-thumb.png",
+          "imgL": "work/daboos/Daboos.png"
+        }
+      ]
+    },
+    "2": {
+      "title": "Laser Care Clinic",
+      "link": "llc.html",
+      "desc": "Visual Identity for a skin care clinic",
+      "slides": [
+        {
+          "img": "work/llc/00.jpg",
+          "imgL": "work/llc/00-thumb.jpg"
+        },
+        {
+          "img": "work/llc/A4-thumb.jpg",
+          "imgL": "work/llc/A4.jpg"
+        },
+        {
+          "img": "work/llc/Basic-thumb.jpg",
+          "imgL": "work/llc/Basic.jpg"
+        }
+      ]
+    },
+    "3": {
+      "title": "Music Beats Bullets",
+      "link": "mbb.html",
+      "desc": "Music beats bullets is a music label that works on bringing musicians from around the globe to come together and spread an ideology of a borderless world where music is the key communicating language.",
+      "slides": [
+        {
+          "img": "work/mbb/mbb2.svg",
+          "imgL": "work/mbb/mbb2.svg"
+        }
+      ]
+    },
+    "4": {
+      "title": "Majdal",
+      "link": "majdal.html",
+      "desc": "Majdal is a family run olive oil producing estate based in Jordan.<br />Turbo was approached to design and re-brand the Majdal line of olive oils, its packaging and a new website.<br />The new logo was presented using a video shot on location with photographer/videographer Mohammed Zakaria and edited/directed by Turbo.<br />The pictures used in the website were shot by photographer Hussam Da’na",
+      "slides": [
+        {
+          "video": "video.mp4",
+          "poster": "work/majdal/majdal-poster.jpg"
+        }
+      ]
+    },
+    "5": {
+      "title": "Never Records Poster",
+      "link": "never.html",
+      "desc": "Never Records is a combination recording studio and record shop, all operating in one building. The sole proprietor, interior decorator, and engineer is New York-based artist Ted Riederer. Riederer devised his unique community art installation in the early part of this century and has been replicating it with regional variations throughout the world since 2010.<br />Performers and musician can sign up for recording sessions inside the art installation or ahead of time, with no auditions necessary, and leave with a freshly cut vinyl record of their music. Visitors to the exhibition can view all of the unique artwork in the installation, listen to any of the recordings from all of the previous Never Records on a turntable in the shop, and watch performances being recorded and cut live.<br />For the Amman installment of Never Records, Turbo developed the super-graphic and poster artwork.",
+      "slides": [
+        {
+          "img": "work/never/A3-thumb.jpg",
+          "imgL": "work/never/A3.jpg"
+        },
+        {
+          "img": "work/never/DSCF9577-thumb.jpg",
+          "imgL": "work/never/DSCF9577.jpg"
+        },
+        {
+          "img": "work/never/DSCF9558-thumb.jpg",
+          "imgL": "work/never/DSCF9558.jpg"
+        }
+      ]
+    },
+    "6": {
+      "title": "Sahel Hiyari Architects",
+      "link": "sahel.html",
+      "desc": "Sahel Al Hiyari Architects - SHA is an award-winning, design-driven Amman-based architectural practice, led by principal architect Sahel Al Hiyari. The firm’s work covers a wide spectrum of design-related disciplines ranging from urban design, interior and furniture design, to architectural installations and exhibition design. <a class='link' href='http://sahelalhiyari.com' target='_blank'>sahelalhiyari.com</a>",
+      "slides": [
+        {
+          "img": "work/sahel/Website-01-thumb.jpg",
+          "imgL": "work/sahel/Website-01.jpg"
+        },
+        {
+          "img": "work/sahel/Website-02-thumb.jpg",
+          "imgL": "work/sahel/Website-02.jpg"
+        },
+        {
+          "img": "work/sahel/Website-03-thumb.jpg",
+          "imgL": "work/sahel/Website-03.jpg"
+        },
+        {
+          "img": "work/sahel/Website-04-thumb.jpg",
+          "imgL": "work/sahel/Website-04.jpg"
+        },
+        {
+          "img": "work/sahel/Website-05-thumb.jpg",
+          "imgL": "work/sahel/Website-05.jpg"
+        },
+        {
+          "img": "work/sahel/Website-06-thumb.jpg",
+          "imgL": "work/sahel/Website-06.jpg"
+        },
+        {
+          "img": "work/sahel/Website-07-thumb.jpg",
+          "imgL": "work/sahel/Website-07.jpg"
+        }
+      ]
+    }
+  },
+  "space": {
+    "1" : {
+      "title": "Never records",
+      "link": "never-records.html",
+      "desc": "Never Records is a combination recording studio and record shop, all operating in one building. The sole proprietor, interior decorator, and engineer is New York-based artist Ted Riederer. Riederer devised his unique community art installation in the early part of this century and has been replicating it with regional variations throughout the world since 2010.<br />Performers and musician can sign up for recording sessions inside the art installation or ahead of time, with no auditions necessary, and leave with a freshly cut vinyl record of their music. Visitors to the exhibition can view all of the unique artwork in the installation, listen to any of the recordings from all of the previous Never Records on a turntable in the shop, and watch performances being recorded and cut live.",
+      "slides": [
+        {
+          "img": "space/never/nr1-thumb.jpg",
+          "imgL": "space/never/nr1.jpg"
+        },
+        {
+          "img": "space/never/nr2-thumb.jpg",
+          "imgL": "space/never/nr2.jpg"
+        },
+        {
+          "img": "space/never/nr3-thumb.jpg",
+          "imgL": "space/never/nr3.jpg"
+        },
+        {
+          "img": "space/never/nr4-thumb.jpg",
+          "imgL": "space/never/nr4.jpg"
+        },
+        {
+          "img": "space/never/nr5-thumb.jpg",
+          "imgL": "space/never/nr5.jpg"
+        },
+        {
+          "img": "space/never/DSCF9429-thumb.jpg",
+          "imgL": "space/never/DSCF9429.jpg"
+        },
+        {
+          "img": "space/never/DSCF9435-thumb.jpg",
+          "imgL": "space/never/DSCF9435.jpg"
+        },
+        {
+          "img": "space/never/DSCF9457-thumb.jpg",
+          "imgL": "space/never/DSCF9457.jpg"
+        },
+        {
+          "img": "space/never/DSCF9466-thumb.jpg",
+          "imgL": "space/never/DSCF9466.jpg"
+        },
+        {
+          "img": "space/never/DSCF9471-thumb.jpg",
+          "imgL": "space/never/DSCF9471.jpg"
+        },
+        {
+          "img": "space/never/DSCF9489-thumb.jpg",
+          "imgL": "space/never/DSCF9489.jpg"
+        },
+        {
+          "img": "space/never/DSCF9514-thumb.jpg",
+          "imgL": "space/never/DSCF9514.jpg"
+        },
+        {
+          "img": "space/never/DSCF9537-thumb.jpg",
+          "imgL": "space/never/DSCF9537.jpg"
+        },
+        {
+          "img": "space/never/DSCF9554-thumb.jpg",
+          "imgL": "space/never/DSCF9554.jpg"
+        }
+      ]
+    },
+    "2" : {
+      "title": "Spring Sessions 100 Days Of Art In The Capital",
+      "link": "spring-sessions.html",
+      "desc": "Diversity or Death by Melika Quteishat and Soraya Ghezelbash.<br />The work investigates the botanical heritage of the Mediterranean, and more specifically the flora currently found within the urban landscape of Amman. Diversity or Death looks into the moral limits and responsibilities of human intervention on nature. Is the question of preservation independent of time and geographical designation? And to what extent should humans try to control nature's transformation?",
+      "slides": [
+        {
+          "img": "space/spring/DSCF7122-thumb.jpg",
+          "imgL": "space/spring/DSCF7122.jpg"
+        }
+      ]
+    },
+    "3" : {
+      "title": "Yes Yes",
+      "link": "yes.html",
+      "desc": "Turbo’s motto, executed by renowned calligrapher Hasan Kan’an",
+      "slides": [
+        {
+          "img": "space/yes/DSCF6997-thumb.jpg",
+          "imgL": "space/yes/DSCF6997.jpg"
+        }
+      ]
+    }
+  }
 }

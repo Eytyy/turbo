@@ -1,0 +1,59 @@
+/* layout/_layout.scss */
+.wrapper {
+  @include wrapper('1400px');
+}
+main {
+  transform: translate3d(0, 0 , 0);
+  transition: all 0.3s linear;
+  .inner & {
+    padding-bottom: 50px;
+  }
+}
+.section {
+  position: relative;
+}
+.full-height {
+  height: 100vh;
+  position: relative;
+}
+
+.inner .sidebar {
+  width: 24px;
+  @include respond-to(medium) {
+    width: 15%;
+  }
+}
+.landing,
+.front {
+  .sidebar {
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 10vh;
+  }
+}
+.inner .wrapper--main {
+  @extend %clearfix;
+  padding-top: 10vh;
+  overflow-x: hidden;
+  .sidebar, main {
+    float: left;
+  }
+  main {
+    width: calc(100% - 24px);
+    padding-left: 2em;
+  }
+  @include respond-to(medium) {
+    main {
+      width: 85%;
+      padding-left: 8.5em;
+    }
+  }
+}
+.landing .wrapper--main {
+  padding: 0;
+  height: 100vh;
+}
+.js-menuIsActive .sidebar {
+  width: 200px;
+}

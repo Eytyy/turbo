@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}Turbo{% endblock %}</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/slick.css">
+  {% block head %}{% endblock %}
+</head>
+<body class="{{classes}}">
+  {% include 'modules/modal.html' %}
+  <div class="sidebar">
+    <div class="wrapper">
+      {% include "partials/header.html" %}
+      {% if length > 1 %}
+        <div class="landing__slider__wrapper">
+          <div class="yolo-wrapper">
+            <div class="c-slider__nav">
+              <div class="c-slider__nav__item c-slider__nav__item--count">(<span class="currentSlide"></span>/<span class="slidesCount"></span>)</div>
+              <div class="c-slider__nav__item c-slider__nav__item--dir c-slider__nav__item--back"><</div>
+              <div class="c-slider__nav__item c-slider__nav__item--dir c-slider__nav__item--dir--next">></div>
+            </div>
+          </div>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+  {% block content %}{% endblock %}
+  <!-- bower:js -->
+  <script src="js/vendor/jquery.min.js"></script>
+  <script src="js/vendor/slick.min.js"></script>
+  <!-- endbower -->
+  <!-- <script src="js/utils.js"></script> -->
+  <script src="js/main.js"></script>
+  {% block javascript %}{% endblock %}
+</body>
+</html>

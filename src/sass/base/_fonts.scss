@@ -1,0 +1,17 @@
+/* base/_fonts.scss */
+
+// Title Fonts
+@font-face {
+  font-family: $title;
+  src: url('../fonts/Tinos-Bold.ttf') format('opentype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+// Body Fonts
+@font-face {
+  font-family: $body;
+  src: url('../fonts/Tinos-Regular.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}

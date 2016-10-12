@@ -1,0 +1,82 @@
+/* layout/_nav.scss */
+
+.website-nav {
+  color: $yellow;
+  transform: translate3d(0, 0, 0);
+  transition: all 0.3s linear;
+  a {
+    color: $yellow;
+    text-decoration: none;
+  }
+  .contact & {
+    color: $blue;
+    a {
+      color: $blue;
+    }
+  }
+  .inner & {
+    opacity: 0;
+  }
+  @include respond-to(medium) {
+    opacity: 1;
+    .inner & {
+      opacity: 1;
+    }
+  }
+}
+.website-nav__item,
+.inner__nav a {
+  text-transform: capitalize;
+  font-size: 16px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+  position: relative;
+  display: block;
+  &--dash {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    &:after {
+      content: '-';
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+    }
+  }
+}
+.inner__nav {
+  margin-top: 40px;
+  &:before {
+    content: '-';
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+}
+.website-nav__drawer {
+  margin-top: 1px;
+  opacity: 0;
+  visibility: hidden;
+  .website-nav__drawer__el {
+    display: block;
+    height: 4px;
+    width: 23px;
+    margin-bottom: 3px;
+    background: $yellow;
+  }
+  .inner & {
+    opacity: 1;
+    visibility: visible;
+  }
+  .contact & {
+    .website-nav__drawer__el {
+      background-color: $blue;
+    }
+  }
+  @include respond-to(medium) {
+    opacity: 0;
+    visibility: hidden;
+    .website-nav__drawer__el {
+      height: 0;
+    }
+  }
+}

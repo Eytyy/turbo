@@ -1,0 +1,28 @@
+<!-- space1.html -->
+{% set page_data = global['space']['3'] %}
+{% set page = global['space'] %}
+{% set classes="inner space" %}
+{% set length = 0 %}
+
+{% extends 'layouts/application.html' %}
+
+{% block content %}
+  <main role="main">
+    <section class="c-section c-section--space">
+      <div class="c-slider c-slider--space">
+        {% include 'modules/slider.html' %}
+      </div>
+      <div class="desc">{{page_data['desc'] | safe}}</div>
+      {% if length > 1 %}
+        <div class="c-slider__nav">
+          <div class="c-slider__nav__item c-slider__nav__item--count">(<span class="currentSlide"></span>/<span class="slidesCount"></span>)</div>
+          <div class="c-slider__nav__item c-slider__nav__item--dir c-slider__nav__item--back"><</div>
+          <div class="c-slider__nav__item c-slider__nav__item--dir c-slider__nav__item--dir--next">></div>
+        </div>
+      {% endif %}
+    </section>
+  </main>
+{% endblock %}
+
+{% block javascript %}
+{% endblock %}

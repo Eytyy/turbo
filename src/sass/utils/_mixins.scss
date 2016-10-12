@@ -1,0 +1,36 @@
+/*  utils/_mixins.scss */
+
+@mixin setFontSizeHeight($font, $leading) {
+  font-size: $font * 1em;
+  line-height: ($leading/$font) * 1em;
+}
+
+@mixin wrapper($max: '100%') {
+  position: relative;
+  width: 100%;
+  max-width: unquote($max);
+  margin: 0 auto;
+  padding: 0 $gutter;
+  @include respond-to(medium) {
+    padding: 0 $gutter--large;
+  }
+  @include respond-to(large) {
+    padding: 0 $gutter--max;
+  }
+}
+
+@mixin respond-to($breakpoint) {
+  // Get the query map for $breakpoints map
+  $bp: map-get($breakpoints, $breakpoint);
+
+  // If there is no query called $breakpoint in map, throw an error
+  @if not $bp {
+    @error "No value could be retrieved from `#{$breakpoint}`. "
+    + "Please make sure it is defined in `$breakpoints` map.";
+  }
+
+  // Include the media mixin with $queries
+  @media #{$bp} {
+    @content;
+  }
+}

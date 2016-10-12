@@ -2,20 +2,24 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>{% block title %}Frontend Workflow Setup{% endblock %}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}Turbo{% endblock %}</title>
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/slick.css">
   {% block head %}{% endblock %}
 </head>
-<body>
-  <div class="wrapper">
-    {% include "partials/header.html" %}
+<body class="{{classes}}">
+  <div class="wrapper wrapper--main">
+    <div class="sidebar">
+      {% include "partials/header.html" %}
+    </div>
     {% block content %}{% endblock %}
-    {% include "partials/footer.html" %}
   </div>
   <!-- bower:js -->
-  <script src="js/vendor/jquery.js"></script>
+  <script src="js/vendor/jquery.min.js"></script>
+  <script src="js/vendor/slick.min.js"></script>
   <!-- endbower -->
-  <script src="js/utils.js"></script>
+  <!-- <script src="js/utils.js"></script> -->
   <script src="js/main.js"></script>
   {% block javascript %}{% endblock %}
 </body>

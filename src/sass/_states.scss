@@ -1,0 +1,17 @@
+.js-menuIsActive {
+  .website-nav {
+    position: absolute;
+    opacity: 1;
+    z-index: 2;
+    transform: translate3d(0, 20px, 0);
+    width: 200px;
+  }
+  main {
+    transform: translate3d(60%, 0 , 0);
+  }
+}
+
+.js-modalIsVisible {
+  opacity: 1;
+  z-index: 1;
+}

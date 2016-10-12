@@ -1,0 +1,29 @@
+.c-section--intro {
+  overflow: hidden;
+  background: #000;
+}
+.c-section {
+  position: relative;
+}
+.c-section--space,
+.c-section--work {
+  max-width: 67em;
+  @include respond-to(medium) {
+    padding-right: 10em;
+  }
+}
+.c-section--contact {
+  max-width: 67em;
+}
+.space {
+  background: $blue;
+}
+.work {
+  background: $pink;
+}
+.contact {
+  background: $yellow;
+  .wrapper--main {
+    height: 100vh;
+  }
+}

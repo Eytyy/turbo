@@ -1,0 +1,76 @@
+/* pages/_front.scss */
+.intro-loop {
+  @extend %setFullsizeComponent;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .intro-loop {
+    height: 300%;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .intro-loop {
+    width: 300%;
+    left: -100%;
+  }
+}
+.loader {
+  display: none;
+}
+.loading .loader {
+  display: block;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  z-index: 11;
+  .spinner {
+    color: $yellow;
+    font-size: 30px;
+    line-height: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .spinner-dot {
+    opacity: 0;
+    width: 5px;
+    height: 5px;
+    display: inline-block;
+    margin-right: 5px;
+    background: $yellow;
+  }
+  .spinner-dot:nth-child(1) {
+    animation: yo1 1s ease-in-out infinite;
+  }
+  .spinner-dot:nth-child(2) {
+    animation: yo2 1s ease-in-out infinite;
+  }
+  .spinner-dot:nth-child(3) {
+    animation: yo3 1s ease-in-out infinite;
+  }
+}
+@keyframes yo1 {
+  0% {
+    opacity: 1;
+  }
+}
+@keyframes yo2 {
+  50% {
+    opacity: 1;
+  }
+}
+@keyframes yo3 {
+  100% {
+    opacity: 1;
+  }
+}
