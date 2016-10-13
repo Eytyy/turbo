@@ -1,7 +1,7 @@
 .DS_Store
 bower_components
 node_modules
-dest
+#dest
 
 # Elastic Beanstalk Files
 .elasticbeanstalk/*
