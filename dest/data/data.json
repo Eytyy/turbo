@@ -199,6 +199,60 @@
           "imgL": "space/yes/DSCF6997.jpg"
         }
       ]
+    },
+    "4" : {
+      "title": "In Turbo",
+      "link": "in-turbo.html",
+      "desc": "'In Turbo' is a single-installation concept-series of exhibitions showcasing works by local and reigonal artists.<br />The series will launch with a photographic installation by Mohammad Zakaria.",
+      "slides": [
+        {
+          "img": "space/inturbo/Black-thumb.jpg",
+          "imgL": "space/inturbo/Black.jpg"
+        },
+        {
+          "img": "space/inturbo/DSCF2430-thumb.jpg",
+          "imgL": "space/inturbo/DSCF2430.jpg"
+        }
+      ]
+    },
+    "5" : {
+      "title": "Local Industries",
+      "link": "local-industries.html",
+      "desc": "A pop-up shop / exhibition of furniture pieces by Local Industries.<br />Local Industries was founded in 2011 by Elias and Yousef Anastas. Palestinian architects, Anastas’ were looking for a way to insert local craft techniques to their work. Their keen interest with furniture stems from their architectural work. Local Industries’ goal is to offer to an international clientele a highly functional furniture crafted by local artisans.<br />LI works with specific Palestinian artisans: the conception and production of furniture happens through a constant back-and-forth between all the agents thus undermining the usual boundaries which separate conception from production. Here, conception stems from the means of production and in return the means of production adapt accordingly. The result is a new type of object, which is adapted to local means of productions but also to modern work or living spaces which require a high standard in functionality, aesthetics and quality.<br />LI thus hopes to bring a new impulse to dying crafts and industries all the while offering a type of furniture which is inscribed within a longstanding history of quality and also adapted to the world of today: objects which are simple and yet remarkably bold.<br />",
+      "slides": [
+        {
+          "img": "space/local/DSCF2709-thumb.jpg",
+          "imgL": "space/local/DSCF2709.jpg"
+        },
+        {
+          "img": "space/local/DSCF2624-thumb.jpg",
+          "imgL": "space/local/DSCF2624.jpg"
+        },
+        {
+          "img": "space/local/DSCF1099-thumb.jpg",
+          "imgL": "space/local/DSCF1099.jpg"
+        },
+        {
+          "img": "space/local/DSCF2635-thumb.jpg",
+          "imgL": "space/local/DSCF2635.jpg"
+        },
+        {
+          "img": "space/local/DSCF2627-thumb.jpg",
+          "imgL": "space/local/DSCF2627.jpg"
+        },
+        {
+          "img": "space/local/DSCF2696-thumb.jpg",
+          "imgL": "space/local/DSCF2696.jpg"
+        },
+        {
+          "img": "space/local/DSCF2680-thumb.jpg",
+          "imgL": "space/local/DSCF2680.jpg"
+        },
+        {
+          "img": "space/local/DSCF2708-thumb.jpg",
+          "imgL": "space/local/DSCF2708.jpg"
+        }
+      ]
     }
   }
 }
