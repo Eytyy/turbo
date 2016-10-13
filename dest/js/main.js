@@ -43,6 +43,7 @@ var APP = function () {
       return;
     }
     domMap.sliders.slick({
+      lazyLoad: 'progressive',
       dots: false,
       infinite: true,
       speed: 500,
@@ -51,7 +52,7 @@ var APP = function () {
       swipe: true,
       accessibility: true,
       adaptiveHeight: true
-    }).on('afterChange', function (event, slick, currentSlide, nextSlide) {
+    }).on('afterChange', function (event, slick, currentSlide) {
       var curr = currentSlide + 1;
       if (curr > 0 && curr < 10) {
         domMap.currentSlide.text('0' + (currentSlide + 1));

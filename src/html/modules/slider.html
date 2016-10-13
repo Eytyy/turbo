@@ -3,7 +3,11 @@
   <div class="c-slider__slide">
     {% if project.img %}
       <a class="c-slider__slide_img-link" href="images/{{project.imgL}}" target="_blank">
-        <img src="images/{{project.img}}" alt="">
+        {% if length > 1 %}
+          <img  data-lazy="images/{{project.img}}" alt="">
+        {% else %}
+          <img  src="images/{{project.img}}" alt="">
+        {% endif %}
         <!-- <div class="c-slider__slide_img" style="background-image: url('images/{{project.img}}');"></div> -->
       </a>
     {% endif %}

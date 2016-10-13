@@ -13,6 +13,11 @@ import changed from 'gulp-changed';
 import imagemin from 'gulp-imagemin';
 import del from 'del';
 import browserSync from 'browser-sync';
+import pump from 'pump';
+import uglify from 'gulp-uglify';
+import concat from 'gulp-concat';
+import rename from 'gulp-rename';
+import cleanCss from 'gulp-clean-css';
 
 const gulp = gulpHelp(_gulp);
 const reload = browserSync.reload;
@@ -166,4 +171,30 @@ gulp.task('serve', 'serve resources', () => {
 });
 // End of serve related tasks ---------------------------------------------
 
+gulp.task('minify-css', () => {
+  return gulp.src('./dest/css/*.css')
+    .pipe(sourcemaps.init())
+    .pipe(cleanCss())
+    .pipe(sourcemaps.write())
+    .pipe(rename({ suffix: '.min' }))
+    .pipe(gulp.dest('./dest/css'));
+});
+
+gulp.task('build-js', (cb) => {
+  pump([
+    gulp.src(['./dest/js/*.js', '!./dest/js/vendor/*.js']),
+    uglify(),
+    rename({ suffix: '.min' }),
+    gulp.dest('./dest/js'),
+  ], cb);
+});
+
+gulp.task('vendor-js', () => {
+  return gulp.src('./dest/js/vendor/*.js')
+    .pipe(concat('vendor.js'))
+    .pipe(gulp.dest('./dest/js'));
+});
+
 gulp.task('default', ['help', 'copyData', 'copyResources', 'fonts', 'images', 'html', 'styles', 'babel', 'serve', 'watch']);
+
+gulp.task('build', ['build-js', 'minify-css', 'vendor-js']);
